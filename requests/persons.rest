@@ -7,11 +7,21 @@ GET http://localhost:3001/info
 
 ###
 // Get single person
-GET http://localhost:3001/api/persons/1
+GET http://localhost:3001/api/persons/5d785e240bd77e2d62c8f0c4
 
 ###
 // Delete person
-DELETE http://localhost:3001/api/persons/1
+DELETE http://localhost:3001/api/persons/5d791a305b0d25350416630c
+
+###
+// Change persons number
+PUT http://localhost:3001/api/persons/5d785e240bd77e2d62c8f0c4
+Content-Type: application/json
+
+{
+    "name": "Joaquin",
+    "number": "11 5311 8877"
+}
 
 ###
 // Add new person
@@ -19,6 +29,6 @@ POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
-    "name": "New guy",
+    "name": "ESTE SI!!!!",
     "number": "11 5311 8877"
 }
